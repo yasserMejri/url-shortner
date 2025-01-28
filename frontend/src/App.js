@@ -41,7 +41,7 @@ const App = () => {
       <meta name="description" content="Test project for Arcube" />
       <h1 className="title">URL Shortner</h1>
       <h1>Enter your Long url to get shortened</h1>
-      <div>
+      <div className="input-wrapper">
         <input
           type="text"
           value={url}
@@ -65,18 +65,11 @@ const App = () => {
       </div>
       <div>
         <h2>Shortened URL</h2>
-        <input
-          type="text"
-          value={
-            shortenedUrl
-              ? `${process.env.REACT_APP_API_URL}/${shortenedUrl}`
-              : ""
-          }
-          readOnly
-          className="shortened-url"
-          placeholder="Shortned url will appear here"
-          data-testid="shortened-url"
-        />
+        <div type="text" className="shortened-url" data-testid="shortened-url">
+          {shortenedUrl
+            ? `${process.env.REACT_APP_API_URL}/${shortenedUrl}`
+            : "Shortned url will appear here"}
+        </div>
       </div>
 
       <footer>

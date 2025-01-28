@@ -40,11 +40,22 @@ input:focus, button:focus {
   margin: 1rem;
   margin-top: auto;
 }
+.input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
 .url-input {
   width: 70vw;
 }
 .shortened-url {
-  width: 320px;
+  font-size: 1.5rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #ffffff;
 }
 footer {
   margin-top: auto;

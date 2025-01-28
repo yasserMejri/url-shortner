@@ -39,7 +39,9 @@ test("shows shortened URL on success", async () => {
   });
   fireEvent.click(buttonElement);
 
-  const shortenedUrlInputElement = await screen.findByDisplayValue("abc123");
+  const shortenedUrlInputElement = await screen.findByText(
+    process.env.REACT_APP_API_URL + "/abc123"
+  );
   expect(shortenedUrlInputElement).toBeInTheDocument();
   expect(shortenedUrlInputElement).toHaveAttribute(
     "data-testid",
