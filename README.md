@@ -27,7 +27,7 @@ This is built by [Yasser Mejri](https://www.linkedin.com/in/yasser-mj/) as a tes
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/yourusername/url-shortener.git
+git clone https://github.com/yasserMejri/url-shortner.git
 ```
 
 2. Navigate to the project directory:
