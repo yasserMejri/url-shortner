@@ -10,7 +10,7 @@ jest.mock('./server/url-shortner/model', () => {
   return mockUrlModel;
 });
 
-const { app, server } = require('./index');
+const app = require('./index');
 
 describe('URL Shortener API', () => {
   beforeAll(() => {
@@ -19,7 +19,7 @@ describe('URL Shortener API', () => {
 
   afterEach(() => {
     jest.clearAllMocks();
-    server.close();
+    app.server.close();
   });
 
   describe('POST /api/getShortUrl', () => {
