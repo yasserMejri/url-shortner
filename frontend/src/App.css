@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #00000033, #ffffff, #00000033);
+}
+
+input, button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #40a9ff;
+  color: white;
+  cursor: pointer;
+}
+
+input:hover, button:hover {
+  border-color: #40a9ff;
+}
+
+input:focus, button:focus {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.title {
+  font-size: 4rem;
+  margin: 1rem;
+  margin-top: auto;
+}
+.url-input {
+  width: 70vw;
+}
+.shortened-url {
+  width: 320px;
+}
+footer {
+  margin-top: auto;
+}
+.status-wrapper {
+  display: flex;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+}
